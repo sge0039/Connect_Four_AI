@@ -1,0 +1,26 @@
+.board {
+    width: max-content;
+    margin: 1em auto;
+    padding: 1em;
+    background-color: $dark-blue;
+}
+
+.row {
+    display: flex;
+
+    div {
+        height: 4em;
+        width: 4em;
+        background-color: $white;
+        border: 1px solid;
+        border-radius: 50%;
+    }
+}
+
+.player-one {
+    background-color: $red !important;
+}
+
+.player-two {
+    background-color: $yellow !important;
+}

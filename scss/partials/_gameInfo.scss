@@ -1,0 +1,21 @@
+.game_info {
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: max-content;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 0.5em;
+    font-family: $ff-s;
+}
+
+h1, h2 {
+    font-weight: $fw-b;
+}
+
+h3  {
+    font-weight: $fw-n;
+}

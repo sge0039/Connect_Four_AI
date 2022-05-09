@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Connect Four</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <div id="game">
+            <div class="game_info">
+                <h1 class="">Connect Four</h1>
+                <h2 class="">The current Player is: <span id="current-player">Player 1</span></h2>
+                <h3 class="">Player 1 VS <span id="ai-player">Player 2</span></h3>
+            </div>
+
+            <div class="board">
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div id="buttons" class="buttons">
+                <button id="resetGame" class="button" onclick="resetGame()">Reset Game</button>
+                <button id="changePlayer" class="button" onclick="changePlayer()">Change starting player</button>
+                <button id="verseAI" class="button" onclick="verseAI()">Verse AI</button>
+                <!-- <button data-modal-target="#modal">show win (test button)</button> -->
+            </div>
+        </div>
+
+        <div class="modal" id="modal">
+            <h3 class="result"><span id="result" class="result">Player 1</span> Wins!</h3>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+
+        <div id="overlay"></div>
+    </body>
+
+    <script src="js/connectFour.js" charset="utf-8"></script>
+    <script src="js/player.js" charset="utf-8"></script>
+    <script src="js/AI.js" charset="utf-8"></script>
+    <script src="js/eventListeners.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+</html>

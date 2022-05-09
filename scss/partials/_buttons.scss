@@ -1,0 +1,34 @@
+.buttons {
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+
+}
+
+.button {
+    margin: auto 1em;
+    // width: 12em;
+    // padding: 0.4em;
+}
+
+.button {
+    display:inline-block;
+    padding:0.7em 1.7em;
+    // margin:0 0.3em 0.3em 0;
+    border-radius:0.2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    // font-family:'Roboto',sans-serif;
+    font-family: $ff-s;
+    font-weight:400;
+    color:$white;
+    // background-color:#3369ff;
+    background-color:$dark-blue;
+    text-align:center;
+    position:relative;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
